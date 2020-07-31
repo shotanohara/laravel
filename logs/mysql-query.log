@@ -1,0 +1,210 @@
+/usr/sbin/mysqld, Version: 8.0.21 (MySQL Community Server - GPL). started with:
+Tcp port: 3306  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+2020-07-31T12:09:08.856738+09:00	    8 Connect	homestead@172.20.0.3 on homestead using TCP/IP
+2020-07-31T12:09:08.858239+09:00	    8 Query	use `homestead`
+2020-07-31T12:09:08.860208+09:00	    8 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2020-07-31T12:09:08.860731+09:00	    8 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2020-07-31T12:09:08.861592+09:00	    8 Close stmt	
+2020-07-31T12:09:08.862141+09:00	    8 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2020-07-31T12:09:08.862639+09:00	    8 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2020-07-31T12:09:08.863286+09:00	    8 Close stmt	
+2020-07-31T12:09:08.867494+09:00	    8 Prepare	select * from information_schema.tables where table_schema = ? and table_name = ? and table_type = 'BASE TABLE'
+2020-07-31T12:09:08.876289+09:00	    8 Execute	select * from information_schema.tables where table_schema = 'homestead' and table_name = 'migrations' and table_type = 'BASE TABLE'
+2020-07-31T12:09:08.877750+09:00	    8 Close stmt	
+2020-07-31T12:09:08.909556+09:00	    8 Prepare	select `migration` from `migrations` order by `batch` asc, `migration` asc
+2020-07-31T12:09:08.910183+09:00	    8 Execute	select `migration` from `migrations` order by `batch` asc, `migration` asc
+2020-07-31T12:09:08.911199+09:00	    8 Close stmt	
+2020-07-31T12:09:08.923059+09:00	    8 Quit	
+2020-07-31T12:09:22.225600+09:00	    9 Connect	homestead@172.20.0.1 on  using TCP/IP
+2020-07-31T12:09:22.230668+09:00	    9 Query	SHOW VARIABLES
+2020-07-31T12:09:22.244821+09:00	    9 Query	SELECT @@global.max_allowed_packet
+2020-07-31T12:09:22.273227+09:00	    9 Query	SHOW DATABASES
+2020-07-31T12:09:22.384417+09:00	   10 Connect	homestead@172.20.0.1 on  using TCP/IP
+2020-07-31T12:09:22.387366+09:00	   10 Query	SHOW VARIABLES
+2020-07-31T12:09:22.395843+09:00	   10 Query	SELECT @@global.max_allowed_packet
+2020-07-31T12:09:47.277585+09:00	    9 Query	USE `homestead`
+2020-07-31T12:09:47.280472+09:00	    9 Query	SHOW VARIABLES LIKE 'character_set_database'
+2020-07-31T12:09:47.290359+09:00	    9 Query	SHOW /*!50002 FULL*/ TABLES
+2020-07-31T12:09:47.294584+09:00	    9 Query	SELECT * FROM information_schema.routines WHERE routine_schema = 'homestead' ORDER BY routine_name
+2020-07-31T12:09:48.187043+09:00	    9 Query	SHOW TABLE STATUS LIKE 'users'
+2020-07-31T12:09:48.193626+09:00	    9 Query	SHOW CREATE TABLE `users`
+2020-07-31T12:09:48.203909+09:00	    9 Query	SET NAMES 'utf8mb4'
+2020-07-31T12:09:48.240247+09:00	    9 Query	SELECT * FROM `users` LIMIT 0,1000
+2020-07-31T12:09:48.248141+09:00	    9 Query	SHOW TABLES IN information_schema LIKE 'ENGINES'
+2020-07-31T12:09:48.254091+09:00	    9 Query	SELECT Engine, Support FROM `information_schema`.`engines` WHERE SUPPORT IN ('DEFAULT', 'YES') AND Engine != 'PERFORMANCE_SCHEMA'
+2020-07-31T12:09:48.257093+09:00	    9 Query	SELECT * FROM `information_schema`.`character_sets` ORDER BY `character_set_name` ASC
+2020-07-31T12:09:48.262206+09:00	    9 Query	SELECT * FROM `information_schema`.`collations` WHERE character_set_name = 'utf8mb4' ORDER BY `collation_name` ASC
+2020-07-31T12:09:49.072817+09:00	    9 Query	SET NAMES 'utf8'
+2020-07-31T12:09:49.076423+09:00	    9 Query	SHOW TABLE STATUS LIKE 'tasks'
+2020-07-31T12:09:49.082152+09:00	    9 Query	SHOW CREATE TABLE `tasks`
+2020-07-31T12:09:49.088286+09:00	    9 Query	SET NAMES 'utf8mb4'
+2020-07-31T12:09:49.111528+09:00	    9 Query	SELECT * FROM `tasks` LIMIT 0,1000
+2020-07-31T12:09:49.926085+09:00	    9 Query	SET NAMES 'utf8'
+2020-07-31T12:09:49.928670+09:00	    9 Query	SHOW TABLE STATUS LIKE 'password_resets'
+2020-07-31T12:09:49.934870+09:00	    9 Query	SHOW CREATE TABLE `password_resets`
+2020-07-31T12:09:49.941279+09:00	    9 Query	SET NAMES 'utf8mb4'
+2020-07-31T12:09:49.948536+09:00	    9 Query	SELECT * FROM `password_resets` LIMIT 0,1000
+2020-07-31T12:09:50.539895+09:00	    9 Query	SET NAMES 'utf8'
+2020-07-31T12:09:50.542355+09:00	    9 Query	SHOW TABLE STATUS LIKE 'migrations'
+2020-07-31T12:09:50.546227+09:00	    9 Query	SHOW CREATE TABLE `migrations`
+2020-07-31T12:09:50.549771+09:00	    9 Query	SET NAMES 'utf8mb4'
+2020-07-31T12:09:50.562743+09:00	    9 Query	SELECT * FROM `migrations` LIMIT 0,1000
+2020-07-31T12:09:51.087840+09:00	    9 Query	SET NAMES 'utf8'
+2020-07-31T12:09:51.090871+09:00	    9 Query	SHOW TABLE STATUS LIKE 'folders'
+2020-07-31T12:09:51.096097+09:00	    9 Query	SHOW CREATE TABLE `folders`
+2020-07-31T12:09:51.101590+09:00	    9 Query	SET NAMES 'utf8mb4'
+2020-07-31T12:09:51.112633+09:00	    9 Query	SELECT * FROM `folders` LIMIT 0,1000
+2020-07-31T12:09:52.578897+09:00	    9 Query	SET NAMES 'utf8'
+2020-07-31T12:09:52.581433+09:00	    9 Query	SHOW TABLE STATUS LIKE 'failed_jobs'
+2020-07-31T12:09:52.591314+09:00	    9 Query	SHOW CREATE TABLE `failed_jobs`
+2020-07-31T12:09:52.595534+09:00	    9 Query	SET NAMES 'utf8mb4'
+2020-07-31T12:09:52.615103+09:00	    9 Query	SELECT * FROM `failed_jobs` LIMIT 0,1000
+2020-07-31T12:10:17.874755+09:00	    9 Query	SET NAMES 'utf8'
+2020-07-31T12:10:17.880288+09:00	    9 Query	SHOW TABLE STATUS LIKE 'users'
+2020-07-31T12:10:17.886261+09:00	    9 Query	SHOW CREATE TABLE `users`
+2020-07-31T12:10:17.889033+09:00	    9 Query	SET NAMES 'utf8mb4'
+2020-07-31T12:10:17.912960+09:00	    9 Query	SELECT * FROM `users` LIMIT 0,1000
+2020-07-31T12:10:18.740945+09:00	    9 Query	SET NAMES 'utf8'
+2020-07-31T12:10:18.743476+09:00	    9 Query	SHOW TABLE STATUS LIKE 'tasks'
+2020-07-31T12:10:18.751090+09:00	    9 Query	SHOW CREATE TABLE `tasks`
+2020-07-31T12:10:18.756338+09:00	    9 Query	SET NAMES 'utf8mb4'
+2020-07-31T12:10:18.786274+09:00	    9 Query	SELECT * FROM `tasks` LIMIT 0,1000
+2020-07-31T12:10:19.421078+09:00	    9 Query	SET NAMES 'utf8'
+2020-07-31T12:10:19.423438+09:00	    9 Query	SHOW TABLE STATUS LIKE 'password_resets'
+2020-07-31T12:10:19.428001+09:00	    9 Query	SHOW CREATE TABLE `password_resets`
+2020-07-31T12:10:19.431573+09:00	    9 Query	SET NAMES 'utf8mb4'
+2020-07-31T12:10:19.443461+09:00	    9 Query	SELECT * FROM `password_resets` LIMIT 0,1000
+2020-07-31T12:10:19.887931+09:00	    9 Query	SET NAMES 'utf8'
+2020-07-31T12:10:19.890315+09:00	    9 Query	SHOW TABLE STATUS LIKE 'migrations'
+2020-07-31T12:10:19.895918+09:00	    9 Query	SHOW CREATE TABLE `migrations`
+2020-07-31T12:10:19.901434+09:00	    9 Query	SET NAMES 'utf8mb4'
+2020-07-31T12:10:19.910505+09:00	    9 Query	SELECT * FROM `migrations` LIMIT 0,1000
+2020-07-31T12:10:20.485198+09:00	    9 Query	SET NAMES 'utf8'
+2020-07-31T12:10:20.489478+09:00	    9 Query	SHOW TABLE STATUS LIKE 'folders'
+2020-07-31T12:10:20.494042+09:00	    9 Query	SHOW CREATE TABLE `folders`
+2020-07-31T12:10:20.497794+09:00	    9 Query	SET NAMES 'utf8mb4'
+2020-07-31T12:10:20.508950+09:00	    9 Query	SELECT * FROM `folders` LIMIT 0,1000
+2020-07-31T12:10:21.368202+09:00	    9 Query	SET NAMES 'utf8'
+2020-07-31T12:10:21.372384+09:00	    9 Query	SHOW TABLE STATUS LIKE 'failed_jobs'
+2020-07-31T12:10:21.378191+09:00	    9 Query	SHOW CREATE TABLE `failed_jobs`
+2020-07-31T12:10:21.382643+09:00	    9 Query	SET NAMES 'utf8mb4'
+2020-07-31T12:10:21.393311+09:00	    9 Query	SELECT * FROM `failed_jobs` LIMIT 0,1000
+2020-07-31T12:10:31.897762+09:00	   11 Connect	homestead@172.20.0.3 on homestead using TCP/IP
+2020-07-31T12:10:31.898649+09:00	   11 Query	use `homestead`
+2020-07-31T12:10:31.899341+09:00	   11 Prepare	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2020-07-31T12:10:31.899664+09:00	   11 Execute	set names 'utf8mb4' collate 'utf8mb4_unicode_ci'
+2020-07-31T12:10:31.900321+09:00	   11 Close stmt	
+2020-07-31T12:10:31.900761+09:00	   11 Prepare	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2020-07-31T12:10:31.901008+09:00	   11 Execute	set session sql_mode='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+2020-07-31T12:10:31.901689+09:00	   11 Close stmt	
+2020-07-31T12:10:31.903300+09:00	   11 Prepare	SHOW FULL TABLES WHERE table_type = 'BASE TABLE'
+2020-07-31T12:10:31.910240+09:00	   11 Execute	SHOW FULL TABLES WHERE table_type = 'BASE TABLE'
+2020-07-31T12:10:31.911592+09:00	   11 Close stmt	
+2020-07-31T12:10:31.920545+09:00	   11 Prepare	SET FOREIGN_KEY_CHECKS=0
+2020-07-31T12:10:31.920854+09:00	   11 Execute	SET FOREIGN_KEY_CHECKS=0
+2020-07-31T12:10:31.921324+09:00	   11 Close stmt	
+2020-07-31T12:10:31.921780+09:00	   11 Prepare	drop table `failed_jobs`,`folders`,`migrations`,`password_resets`,`tasks`,`users`
+2020-07-31T12:10:31.922079+09:00	   11 Execute	drop table `failed_jobs`,`folders`,`migrations`,`password_resets`,`tasks`,`users`
+2020-07-31T12:10:31.976606+09:00	   11 Close stmt	
+2020-07-31T12:10:31.977137+09:00	   11 Prepare	SET FOREIGN_KEY_CHECKS=1
+2020-07-31T12:10:31.977608+09:00	   11 Execute	SET FOREIGN_KEY_CHECKS=1
+2020-07-31T12:10:31.978073+09:00	   11 Close stmt	
+2020-07-31T12:10:31.980466+09:00	   11 Prepare	select * from information_schema.tables where table_schema = ? and table_name = ? and table_type = 'BASE TABLE'
+2020-07-31T12:10:31.980903+09:00	   11 Execute	select * from information_schema.tables where table_schema = 'homestead' and table_name = 'migrations' and table_type = 'BASE TABLE'
+2020-07-31T12:10:31.982091+09:00	   11 Close stmt	
+2020-07-31T12:10:31.999135+09:00	   11 Prepare	create table `migrations` (`id` int unsigned not null auto_increment primary key, `migration` varchar(255) not null, `batch` int not null) default character set utf8mb4 collate 'utf8mb4_unicode_ci'
+2020-07-31T12:10:32.005561+09:00	   11 Execute	create table `migrations` (`id` int unsigned not null auto_increment primary key, `migration` varchar(255) not null, `batch` int not null) default character set utf8mb4 collate 'utf8mb4_unicode_ci'
+2020-07-31T12:10:32.027339+09:00	   11 Close stmt	
+2020-07-31T12:10:32.046373+09:00	   11 Prepare	select `migration` from `migrations` order by `batch` asc, `migration` asc
+2020-07-31T12:10:32.046749+09:00	   11 Execute	select `migration` from `migrations` order by `batch` asc, `migration` asc
+2020-07-31T12:10:32.047666+09:00	   11 Close stmt	
+2020-07-31T12:10:32.071972+09:00	   11 Prepare	select max(`batch`) as aggregate from `migrations`
+2020-07-31T12:10:32.072344+09:00	   11 Execute	select max(`batch`) as aggregate from `migrations`
+2020-07-31T12:10:32.073201+09:00	   11 Close stmt	
+2020-07-31T12:10:32.107604+09:00	   11 Prepare	create table `users` (`id` bigint unsigned not null auto_increment primary key, `name` varchar(255) not null, `email` varchar(255) not null, `email_verified_at` timestamp null, `password` varchar(255) not null, `remember_token` varchar(100) null, `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci'
+2020-07-31T12:10:32.108152+09:00	   11 Execute	create table `users` (`id` bigint unsigned not null auto_increment primary key, `name` varchar(255) not null, `email` varchar(255) not null, `email_verified_at` timestamp null, `password` varchar(255) not null, `remember_token` varchar(100) null, `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci'
+2020-07-31T12:10:32.128700+09:00	   11 Close stmt	
+2020-07-31T12:10:32.129355+09:00	   11 Prepare	alter table `users` add unique `users_email_unique`(`email`)
+2020-07-31T12:10:32.129694+09:00	   11 Execute	alter table `users` add unique `users_email_unique`(`email`)
+2020-07-31T12:10:32.145882+09:00	   11 Close stmt	
+2020-07-31T12:10:32.152261+09:00	   11 Prepare	insert into `migrations` (`migration`, `batch`) values (?, ?)
+2020-07-31T12:10:32.152562+09:00	   11 Execute	insert into `migrations` (`migration`, `batch`) values ('2014_10_12_000000_create_users_table', 1)
+2020-07-31T12:10:32.155337+09:00	   11 Close stmt	
+2020-07-31T12:10:32.158375+09:00	   11 Prepare	create table `password_resets` (`email` varchar(255) not null, `token` varchar(255) not null, `created_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci'
+2020-07-31T12:10:32.159005+09:00	   11 Execute	create table `password_resets` (`email` varchar(255) not null, `token` varchar(255) not null, `created_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci'
+2020-07-31T12:10:32.177554+09:00	   11 Close stmt	
+2020-07-31T12:10:32.178044+09:00	   11 Prepare	alter table `password_resets` add index `password_resets_email_index`(`email`)
+2020-07-31T12:10:32.178352+09:00	   11 Execute	alter table `password_resets` add index `password_resets_email_index`(`email`)
+2020-07-31T12:10:32.194878+09:00	   11 Close stmt	
+2020-07-31T12:10:32.195692+09:00	   11 Prepare	insert into `migrations` (`migration`, `batch`) values (?, ?)
+2020-07-31T12:10:32.196135+09:00	   11 Execute	insert into `migrations` (`migration`, `batch`) values ('2014_10_12_100000_create_password_resets_table', 1)
+2020-07-31T12:10:32.203681+09:00	   11 Close stmt	
+2020-07-31T12:10:32.206138+09:00	   11 Prepare	create table `failed_jobs` (`id` bigint unsigned not null auto_increment primary key, `connection` text not null, `queue` text not null, `payload` longtext not null, `exception` longtext not null, `failed_at` timestamp default CURRENT_TIMESTAMP not null) default character set utf8mb4 collate 'utf8mb4_unicode_ci'
+2020-07-31T12:10:32.206690+09:00	   11 Execute	create table `failed_jobs` (`id` bigint unsigned not null auto_increment primary key, `connection` text not null, `queue` text not null, `payload` longtext not null, `exception` longtext not null, `failed_at` timestamp default CURRENT_TIMESTAMP not null) default character set utf8mb4 collate 'utf8mb4_unicode_ci'
+2020-07-31T12:10:32.225623+09:00	   11 Close stmt	
+2020-07-31T12:10:32.226431+09:00	   11 Prepare	insert into `migrations` (`migration`, `batch`) values (?, ?)
+2020-07-31T12:10:32.226793+09:00	   11 Execute	insert into `migrations` (`migration`, `batch`) values ('2019_08_19_000000_create_failed_jobs_table', 1)
+2020-07-31T12:10:32.229654+09:00	   11 Close stmt	
+2020-07-31T12:10:32.243287+09:00	   11 Quit	
+2020-07-31T12:10:35.929925+09:00	    9 Query	SET NAMES 'utf8'
+2020-07-31T12:10:35.934134+09:00	    9 Query	SHOW TABLE STATUS LIKE 'tasks'
+2020-07-31T12:10:35.940468+09:00	    9 Query	SHOW CREATE TABLE `tasks`
+2020-07-31T12:10:35.952363+09:00	    9 Query	SHOW /*!50002 FULL*/ TABLES
+2020-07-31T12:10:35.960755+09:00	    9 Query	SELECT * FROM information_schema.routines WHERE routine_schema = 'homestead' ORDER BY routine_name
+2020-07-31T12:10:35.971920+09:00	    9 Query	SET NAMES 'utf8mb4'
+2020-07-31T12:10:35.975012+09:00	   10 Query	SHOW FULL COLUMNS FROM `failed_jobs` FROM `homestead`
+2020-07-31T12:10:35.987379+09:00	   10 Query	SHOW FULL COLUMNS FROM `migrations` FROM `homestead`
+2020-07-31T12:10:35.996790+09:00	   10 Query	SHOW FULL COLUMNS FROM `password_resets` FROM `homestead`
+2020-07-31T12:10:36.003442+09:00	   10 Query	SHOW FULL COLUMNS FROM `users` FROM `homestead`
+2020-07-31T12:10:36.011923+09:00	   10 Query	SELECT SPECIFIC_NAME, ROUTINE_TYPE, DTD_IDENTIFIER, IS_DETERMINISTIC, SQL_DATA_ACCESS, SECURITY_TYPE, DEFINER FROM `information_schema`.`ROUTINES` WHERE `ROUTINE_SCHEMA` = 'homestead'
+2020-07-31T12:10:38.445277+09:00	    9 Query	SET NAMES 'utf8'
+2020-07-31T12:10:38.449554+09:00	    9 Query	SHOW TABLE STATUS LIKE 'users'
+2020-07-31T12:10:38.458800+09:00	    9 Query	SHOW CREATE TABLE `users`
+2020-07-31T12:10:38.462597+09:00	    9 Query	SET NAMES 'utf8mb4'
+2020-07-31T12:10:38.475318+09:00	    9 Query	SELECT * FROM `users` LIMIT 0,1000
+2020-07-31T12:10:39.025255+09:00	    9 Query	SET NAMES 'utf8'
+2020-07-31T12:10:39.028778+09:00	    9 Query	SHOW TABLE STATUS LIKE 'migrations'
+2020-07-31T12:10:39.038603+09:00	    9 Query	SHOW CREATE TABLE `migrations`
+2020-07-31T12:10:39.041409+09:00	    9 Query	SET NAMES 'utf8mb4'
+2020-07-31T12:10:39.059693+09:00	    9 Query	SELECT * FROM `migrations` LIMIT 0,1000
+2020-07-31T12:10:39.628595+09:00	    9 Query	SET NAMES 'utf8'
+2020-07-31T12:10:39.633339+09:00	    9 Query	SHOW TABLE STATUS LIKE 'failed_jobs'
+2020-07-31T12:10:39.642258+09:00	    9 Query	SHOW CREATE TABLE `failed_jobs`
+2020-07-31T12:10:39.646702+09:00	    9 Query	SET NAMES 'utf8mb4'
+2020-07-31T12:10:39.656643+09:00	    9 Query	SELECT * FROM `failed_jobs` LIMIT 0,1000
+2020-07-31T12:10:40.227253+09:00	    9 Query	SET NAMES 'utf8'
+2020-07-31T12:10:40.232032+09:00	    9 Query	SHOW TABLE STATUS LIKE 'password_resets'
+2020-07-31T12:10:40.242016+09:00	    9 Query	SHOW CREATE TABLE `password_resets`
+2020-07-31T12:10:40.245208+09:00	    9 Query	SET NAMES 'utf8mb4'
+2020-07-31T12:10:40.257451+09:00	    9 Query	SELECT * FROM `password_resets` LIMIT 0,1000
+2020-07-31T13:00:35.325631+09:00	    9 Query	SET NAMES 'utf8'
+2020-07-31T13:00:35.334236+09:00	    9 Query	SHOW TABLE STATUS LIKE 'users'
+2020-07-31T13:00:35.349557+09:00	    9 Query	SHOW CREATE TABLE `users`
+2020-07-31T13:00:35.354149+09:00	    9 Query	SET NAMES 'utf8mb4'
+2020-07-31T13:00:35.369264+09:00	    9 Query	SELECT * FROM `users` LIMIT 0,1000
+2020-07-31T13:00:35.888194+09:00	    9 Query	SET NAMES 'utf8'
+2020-07-31T13:00:35.890656+09:00	    9 Query	SHOW TABLE STATUS LIKE 'migrations'
+2020-07-31T13:00:35.896495+09:00	    9 Query	SHOW CREATE TABLE `migrations`
+2020-07-31T13:00:35.901135+09:00	    9 Query	SET NAMES 'utf8mb4'
+2020-07-31T13:00:35.911669+09:00	    9 Query	SELECT * FROM `migrations` LIMIT 0,1000
+2020-07-31T13:00:36.430868+09:00	    9 Query	SET NAMES 'utf8'
+2020-07-31T13:00:36.435077+09:00	    9 Query	SHOW TABLE STATUS LIKE 'failed_jobs'
+2020-07-31T13:00:36.441605+09:00	    9 Query	SHOW CREATE TABLE `failed_jobs`
+2020-07-31T13:00:36.445134+09:00	    9 Query	SET NAMES 'utf8mb4'
+2020-07-31T13:00:36.457196+09:00	    9 Query	SELECT * FROM `failed_jobs` LIMIT 0,1000
+2020-07-31T13:00:37.547955+09:00	    9 Query	SET NAMES 'utf8'
+2020-07-31T13:00:37.552374+09:00	    9 Query	SHOW TABLE STATUS LIKE 'migrations'
+2020-07-31T13:00:37.558640+09:00	    9 Query	SHOW CREATE TABLE `migrations`
+2020-07-31T13:00:37.561305+09:00	    9 Query	SET NAMES 'utf8mb4'
+2020-07-31T13:00:37.577574+09:00	    9 Query	SELECT * FROM `migrations` LIMIT 0,1000
+2020-07-31T13:00:39.294548+09:00	    9 Query	SET NAMES 'utf8'
+2020-07-31T13:00:39.297863+09:00	    9 Query	SHOW TABLE STATUS LIKE 'password_resets'
+2020-07-31T13:00:39.305195+09:00	    9 Query	SHOW CREATE TABLE `password_resets`
+2020-07-31T13:00:39.310121+09:00	    9 Query	SET NAMES 'utf8mb4'
+2020-07-31T13:00:39.326541+09:00	    9 Query	SELECT * FROM `password_resets` LIMIT 0,1000
+2020-07-31T13:00:39.925623+09:00	    9 Query	SET NAMES 'utf8'
+2020-07-31T13:00:39.928761+09:00	    9 Query	SHOW TABLE STATUS LIKE 'users'
+2020-07-31T13:00:39.935808+09:00	    9 Query	SHOW CREATE TABLE `users`
+2020-07-31T13:00:39.941287+09:00	    9 Query	SET NAMES 'utf8mb4'
+2020-07-31T13:00:39.951749+09:00	    9 Query	SELECT * FROM `users` LIMIT 0,1000
